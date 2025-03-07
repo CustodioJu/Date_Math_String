@@ -1,0 +1,19 @@
+// 3. Manipulação de Strings:
+// Contar Letras: Crie uma função contarLetras(texto) que receba uma string e retorne o número de letras nela.
+
+// Solicita ao usuário que digite um texto e armazena o valor na variável 'texto'
+let texto = prompt("Digite um texto: ");
+
+// Função para contar o número de letras no texto fornecido, excluindo espaços
+function contarLetras(texto) {
+    // O método 'replace(/\s+/g, "")' remove todos os espaços (em branco) do texto
+    // - '\s+' corresponde a um ou mais espaços em branco (incluindo espaços, quebras de linha, tabs, etc.)
+    // - 'g' é uma flag que significa "global", ou seja, aplica a substituição em todas as ocorrências no texto
+    // O 'replace' substitui todos os espaços por uma string vazia (""), efetivamente removendo-os.
+    
+    // 'texto.length' conta o número de caracteres restantes após a remoção dos espaços
+    console.log(texto.replace(/\s+/g, "").length); // Exibe o número de letras no texto sem espaços
+}
+
+// Chama a função contarLetras passando o texto inserido pelo usuário como argumento
+contarLetras(texto);
