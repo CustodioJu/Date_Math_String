@@ -1,0 +1,23 @@
+// 2. Cálculos Matemáticos:
+// Hipotenusa: Desenvolva uma função calcularHipotenusa(a, b) que calcule a hipotenusa de um triângulo retângulo usando o Teorema de Pitágoras.
+
+// Solicita ao usuário o valor do cateto oposto e converte para inteiro usando parseInt
+let a = parseInt(prompt("Digite o valor do cateto oposto: "));
+
+// Solicita ao usuário o valor do cateto adjacente e converte para inteiro usando parseInt
+let b = parseInt(prompt("Digite o valor do cateto adjacente: "));
+
+// Função que calcula a hipotenusa, dado os valores dos catetos (a e b)
+function calcularHipotenusa(a, b) {
+    // O cálculo da hipotenusa é feito usando o Teorema de Pitágoras:
+    // hipotenusa = √(a² + b²)
+    // Math.pow(x, 2) calcula x² (o quadrado de x)
+    // Math.sqrt(x) calcula a raiz quadrada de x
+    console.log(Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2)));
+}
+
+// Exibe uma mensagem no console antes de mostrar o valor da hipotenusa
+console.log("O valor da hipotenusa é: ");
+
+// Chama a função calcularHipotenusa passando os valores de a e b
+calcularHipotenusa(a, b);
