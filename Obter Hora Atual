@@ -4,13 +4,11 @@
 // Cria uma nova instância do objeto Date, que armazena a data e hora atuais.
 let data = new Date();
 
-// Função para exibir a hora atual formatada.
+// Função para obter a hora atual formatada
 function obterHoraAtual() {
-    // Usa o método toLocaleTimeString() para obter a hora atual formatada conforme a localização especificada.
-    // A string "pt-BR" define o idioma e o formato da hora como sendo do Brasil (formato 24h padrão).
-    // O resultado será a hora no formato "HH:MM:SS", de acordo com a configuração regional brasileira.
-    console.log(`${data.toLocaleTimeString("pt-BR")}`); 
+  // O método toLocaleTimeString com o parâmetro "pt-BR" retorna a hora formatada no padrão brasileiro
+  return (`${data.toLocaleTimeString("pt-BR")}`);
 }
 
-// Chama a função obterHoraAtual para exibir a hora no console.
-obterHoraAtual();
+// Exibe a hora atual formatada no console
+console.log(obterHoraAtual());
