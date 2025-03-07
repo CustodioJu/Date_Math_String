@@ -5,16 +5,13 @@
 // Cria uma nova instância do objeto Date, que armazena a data e hora atuais.
 let data = new Date();
 
-// Função para exibir a data atual formatada.
-function obterDataAtual() {
-    // Imprime no console a data no formato 'DD / MM / YYYY'
-    // data.getDate() retorna o dia do mês (1-31)
-    // data.getMonth() retorna o mês, mas como o mês começa de 0 (0 para janeiro, 1 para fevereiro...), é somado 1.
-    // data.getFullYear() retorna o ano completo (ex: 2025).
-    // O '0' é concatenado diretamente antes do mês para garantir o formato de dois dígitos (ex: 03 para março, 09 para setembro).
-    console.log(`${data.getDate()} / 0${data.getMonth() + 1} / ${data.getFullYear()}`);
+// Função para formatar e retornar a data no formato brasileiro (dd/mm/aaaa)
+function obterDataAtual(data) {
+    // O método toLocaleDateString com o parâmetro "pt-BR" retorna a data formatada em português
+    return (data.toLocaleDateString("pt-BR"));
 }
 
-// Chama a função obterDataAtual para exibir a data no console.
-obterDataAtual();
+// Exibe a data formatada no console
+console.log(obterDataAtual(data));
+
 
