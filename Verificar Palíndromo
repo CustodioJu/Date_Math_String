@@ -1,0 +1,29 @@
+// 3. Manipulação de Strings:
+// Verificar Palíndromo: Crie uma função ehPalindromo(texto) que verifique se uma string é um palíndromo, ignorando espaços e diferenças entre maiúsculas e minúsculas.
+
+// Solicita ao usuário que digite um texto e armazena o valor na variável 'texto'
+let texto = prompt("Digite um texto: ");
+
+// Função que verifica se o texto fornecido é um palíndromo
+function ehPalindromo(texto) {
+  // Compara a versão limpa e invertida do texto com a versão limpa original
+  // Primeiro, o texto é transformado para minúsculas e removem-se os espaços
+
+  // O método 'toLowerCase()' converte o texto para minúsculas, para fazer a comparação sem diferenciar maiúsculas e minúsculas.
+  // O método 'split('')' divide o texto em um array de caracteres
+  // O método 'reverse()' inverte a ordem dos caracteres no array
+  // O método 'join('')' junta os caracteres de volta em uma string
+  // O método 'replace(/\s+/g, "")' remove todos os espaços do texto
+
+  // Comparação: texto invertido (sem espaços e em minúsculas) com o texto original (sem espaços e em minúsculas)
+  if (texto.toLowerCase().split('').reverse().join('').replace(/\s+/g, "") === texto.replace(/\s+/g, "").toLowerCase()) {
+    // Se a comparação for verdadeira, o texto é um palíndromo, então exibe a mensagem correspondente
+    console.log("Sua palavra é um palíndromo");
+  } else {
+    // Se a comparação for falsa, o texto não é um palíndromo, então exibe a mensagem correspondente
+    console.log("Sua palavra não é um palíndromo");
+  }
+}
+
+// Chama a função ehPalindromo passando o texto inserido pelo usuário como argumento
+ehPalindromo(texto);
