@@ -15,7 +15,7 @@ function gerarNumeroAleatorio(min, max) {
     // 2. Multiplicamos o resultado por Math.random() para escalar o valor aleatório para o intervalo desejado
     // 3. Adicionamos "min" para ajustar o valor dentro do intervalo desejado
     // O "+ 1" no final não é necessário e pode afetar o intervalo.
-    console.log(Math.random() * (max - min) + min);
+    console.log(Math.random() * (max - min) + min ;
 }
 
 // Exibe a mensagem no console antes de mostrar o número aleatório.
