@@ -1,0 +1,25 @@
+// 2. Cálculos Matemáticos
+// Fatorial: Escreva uma função calcularFatorial(n) que calcule o fatorial de um número.
+
+// Solicita ao usuário um número e converte a entrada para um inteiro usando parseInt.
+let n = parseInt(prompt("Digite um número: "));
+
+// Inicializa a variável 'num' com 1, que servirá para armazenar o resultado do fatorial.
+let num = 1;
+
+// Função que calcula o fatorial de um número n.
+function calcularFatorial(n) {
+    // Loop que começa de n e vai até 2, multiplicando num por cada valor de i
+    for (let i = n; i > 1; i--) {
+        // Multiplica o valor atual de num pelo valor de i
+        num *= i;
+    }
+    // Exibe o resultado do fatorial no console
+    console.log(num);
+}
+
+// Exibe uma mensagem antes de chamar a função que calcula o fatorial
+console.log("A fatoração é: ");
+
+// Chama a função calcularFatorial, passando o valor de n (número fornecido pelo usuário)
+calcularFatorial(n);
