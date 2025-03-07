@@ -1,0 +1,16 @@
+1. Manipulação de Datas e Horas:
+ Obter Hora Atual: Desenvolva uma função obterHoraAtual() que retorne a hora atual no formato HH:MM:SS.
+
+// Cria uma nova instância do objeto Date, que armazena a data e hora atuais.
+let data = new Date();
+
+// Função para exibir a hora atual formatada.
+function obterHoraAtual() {
+    // Usa o método toLocaleTimeString() para obter a hora atual formatada conforme a localização especificada.
+    // A string "pt-BR" define o idioma e o formato da hora como sendo do Brasil (formato 24h padrão).
+    // O resultado será a hora no formato "HH:MM:SS", de acordo com a configuração regional brasileira.
+    console.log(`${data.toLocaleTimeString("pt-BR")}`); 
+}
+
+// Chama a função obterHoraAtual para exibir a hora no console.
+obterHoraAtual();
