@@ -1,0 +1,51 @@
+/*1. Manipulação de Datas e Horas:
+Obter Data Atual: Crie uma função obterDataAtual() que retorne a data atual no formato DD/MM/AAAA.
+
+let data = new Date();
+
+function obterDataAtual() {
+console.log(`${data.getDate()} / 0${data.getMonth() + 1} / ${data.getFullYear()}`) 
+
+}
+
+obterDataAtual()*/
+
+
+/*
+1. Obter Hora Atual: Desenvolva uma função obterHoraAtual() que retorne a hora atual no formato HH:MM:SS.
+
+
+let data = new Date();
+
+function obterHoraAtual() {
+    console.log(`${data.toLocaleTimeString("pt-BR")}`) 
+}
+
+obterHoraAtual();*/
+
+
+/*2. Cálculos Matemáticos:
+Hipotenusa: Desenvolva uma função calcularHipotenusa(a, b) que calcule a hipotenusa de um triângulo retângulo usando o Teorema de Pitágoras.
+
+let a = parseInt(prompt("Digite o valor do cateto oposto: "));
+let b = parseInt(prompt("Digite o valor do cateto adjacente: "));
+
+
+function  calcularHipotenusa(a, b) {
+    console.log(Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2)));
+}
+
+console.log("O valor da hipotenusa é: ");
+calcularHipotenusa(a, b)*/
+
+/*2. Número Aleatório: Crie uma função gerarNumeroAleatorio(min, max) que gere um número aleatório entre os valores min e max (inclusive).
+
+let min = parseFloat(prompt("Digite um valor mínimo: "));
+let max = parseFloat(prompt("Digite um valor máximo: "));
+
+function gerarNumeroAleatorio(min, max) {
+  console.log(Math.random() * (max - min - 1) + min + 1);
+}
+
+console.log("O número aleatório é: ")
+gerarNumeroAleatorio(min, max);*/
