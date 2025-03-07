@@ -10,7 +10,7 @@ let num = 1;
 // Função que calcula o fatorial de um número n.
 function calcularFatorial(n) {
     // Loop que começa de n e vai até 2, multiplicando num por cada valor de i
-    for (let i = n; i > 1; i--) {
+    for (let i = n; i >= 1; i--) {
         // Multiplica o valor atual de num pelo valor de i
         num *= i;
     }
