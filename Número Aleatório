@@ -1,0 +1,25 @@
+// 2. Cálculos Matemáticos:
+// Número Aleatório: Crie uma função gerarNumeroAleatorio(min, max) que gere um número aleatório entre os valores min e max (inclusive).
+
+// Solicita ao usuário um valor mínimo e converte a entrada para um número de ponto flutuante (decimal).
+let min = parseFloat(prompt("Digite um valor mínimo: "));
+
+// Solicita ao usuário um valor máximo e converte a entrada para um número de ponto flutuante (decimal).
+let max = parseFloat(prompt("Digite um valor máximo: "));
+
+// Função que gera um número aleatório entre o valor mínimo e máximo fornecido
+function gerarNumeroAleatorio(min, max) {
+    // Math.random() gera um número aleatório entre 0 (inclusive) e 1 (exclusive)
+    // Para gerar um número entre "min" e "max", é feito o seguinte cálculo:
+    // 1. Subtraímos "min" de "max" para obter o intervalo entre os dois números
+    // 2. Multiplicamos o resultado por Math.random() para escalar o valor aleatório para o intervalo desejado
+    // 3. Adicionamos "min" para ajustar o valor dentro do intervalo desejado
+    // O "+ 1" no final não é necessário e pode afetar o intervalo.
+    console.log(Math.random() * (max - min) + min);
+}
+
+// Exibe a mensagem no console antes de mostrar o número aleatório.
+console.log("O número aleatório é: ");
+
+// Chama a função gerarNumeroAleatorio com os valores fornecidos pelo usuário (min e max)
+gerarNumeroAleatorio(min, max);
