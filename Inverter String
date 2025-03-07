@@ -1,0 +1,22 @@
+// 3. Manipulação de Strings:
+// Inverter String: Desenvolva uma função inverterString(texto) que retorne o texto invertido.
+
+// Solicita ao usuário que digite um texto e armazena o valor na variável 'texto'
+let texto = prompt("Digite um texto: ");
+
+// Função que inverte a string fornecida como argumento
+function inverterString(texto) {
+    // O método 'split('') divide o texto em um array de caracteres
+    // Exemplo: 'hello' se torna ['h', 'e', 'l', 'l', 'o']
+    
+    // O método 'reverse()' inverte a ordem dos elementos do array
+    // Exemplo: ['h', 'e', 'l', 'l', 'o'] se torna ['o', 'l', 'l', 'e', 'h']
+    
+    // O método 'join('') junta os caracteres do array de volta em uma string
+    // Exemplo: ['o', 'l', 'l', 'e', 'h'] se torna 'olleh'
+    
+    console.log(texto.split('').reverse().join('')); // Exibe a string invertida no console
+}
+
+// Chama a função inverterString passando o texto inserido pelo usuário como argumento
+inverterString(texto);
